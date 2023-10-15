@@ -75,12 +75,43 @@ let sk1 = rand(0,2)
 let sk2 = rand(0,2)
 let sk3 = rand(0,2)
 let sk4 = rand(0,2)
-let nuliai
+let nuliai = 0;
+let vienetai = 0;
+let dvejetai = 0;
 
-console.log(sk1, sk2, sk3, sk4);
+if(sk1 === 0)
+  nuliai++;
+if(sk2 === 0)
+  nuliai++;
+if(sk3 === 0)
+  nuliai++;
+if(sk4 === 0)
+  nuliai++;
+
+if(sk1 === 1)
+  vienetai++;
+if(sk2 === 1)
+vienetai++;
+if(sk3 === 1)
+vienetai++;
+if(sk4 === 1)
+vienetai++;
+
+if(sk1 === 2)
+  dvejetai++;
+if(sk2 === 2)
+dvejetai++;
+if(sk3 === 2)
+dvejetai++;
+if(sk4 === 2)
+dvejetai++;
+
+console.log(`Gauti skaičiai`, sk1, sk2, sk3, sk4);
+
+console.log(`Nuliai:`, nuliai, `vienetai:`, vienetai, `dvejetai:`, dvejetai);
 
 
-//if (sk1 === 0) console.log {sk1}//
+
 
 
 //šešta užduotis//
